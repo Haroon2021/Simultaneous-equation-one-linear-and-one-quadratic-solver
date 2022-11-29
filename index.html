@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+    <title>Simultaneous equation solver: one linear equation and one quadratic</title>
+</head>
+<body>
+    <p>Simultaneous equation solver: one linear equation and one quadratic</p>
+
+    <math>
+        <mrow>
+            <mrow>
+            <msup>
+                <mi>ax</mi>
+                <mn>2</mn>
+            </msup>
+                <mo>+</mo>
+            <mrow>
+                <mn>b</mn>
+                <mo>&InvisibleTimes;</mo>
+                <mi>x</mi>
+            </mrow>
+                <mo>+</mo>
+                <mn>c</mn>
+            </mrow>
+            <mo>=</mo>
+            <mn>y</mn>
+        </mrow>
+    </math>
+
+    <br>
+
+    <math>
+        <mrow>
+            <mrow>
+            <msup>
+                <mi>dy</mi>
+                <mn></mn>
+            </msup>
+                <mo>+</mo>
+            <mrow>
+                <mn>e</mn>
+                <mo>&InvisibleTimes;</mo>
+                <mi>x</mi>
+            </mrow>
+                <mo></mo>
+                <mn></mn>
+            </mrow>
+            <mo>=</mo>
+            <mn>f</mn>
+        </mrow>
+    </math>
+
+    <br><br>Where a, b, c, d, e and f are constants<br><br>
+    Please insert numbers for a to f including any 0's:
+    <br><br>
+
+    <form>
+        <label id="avalue">Value for a </label>
+        <input type="text" id="aforlinearequation" name="a"><br><br>
+
+        <label id="bvalue">Value for b </label>
+        <input type="text" id="bforlinearequation" name="b"><br><br>
+
+        <label id="cvalue">Value for c </label>
+        <input type="text" id="cforlinearequation" name="c"><br><br>
+
+        <label id="dvalue">Value for d </label>
+        <input type="text" id="dforlinearequation" name="d"><br><br>
+
+        <label id="evalue">Value for e </label>
+        <input type="text" id="eforlinearequation" name="e"><br><br>
+
+        <label id="fvalue">Value for f </label>
+        <input type="text" id="fforlinearequation" name="f"><br><br>
+
+        <button type="submit" id = "calculateButton">Calculate</button>
+    </form>
+
+    <div class="initialarranging"></div>
+
+    <div class="solvingnewquadratic"></div>
+
+    <script src="app.js" defer ></script>
+
+    
+</body>
+</html>
